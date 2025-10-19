@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Suzuna's Works</title>
+
+    <script
+      src="https://kit.fontawesome.com/1cca408388.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- nav is at the top of this page -->
+    <div class="menu-container">
+      <a href="#top">Suzu</a>
+      <i class="fa-solid fa-bars humberger"></i>
+      <nav class="nav-menu">
+        <ul class="nav-list">
+          <li class="nav-item">Home</li>
+          <li class="nav-item">About</li>
+          <li class="nav-item">Works</li>
+          <li class="nav-item">Contact</li>
+        </ul>
+      </nav>
+    </div>
+
+
+    <!-- header display my name and circled photo -->
+    <header id="#top">
+      <h1><br>Hello, I am</br>Suzuna<br>Full Stack Developer</br></h1>
+      <img src="./images/robbin.png" alt="my_dog_img">
+    </header>
+
+    <!-- Section1 about for my skills -->
+    <section class="section1 about">
+      <h2 class="aligh-center">New Generation Web Developer</h2>
+      <div class="about-icons">
+        <ul>
+          <li><i class="fa-brands fa-html5"></i></li>
+          <li><i class="fa-brands fa-css3-alt"></i></li>
+          <li><i class="fa-brands fa-node-js"></i></li>
+          <li><i class="fa-brands fa-github"></i></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Section2 works for desplaying my projects -->
+    <section class="section2 works">
+      <h2 class="aligh-center">Works</h2>
+      <div id="work1">
+        <!-- <a href="file:///Users/arakakisuzuna/Documents/frontend-mentor/1social-links-profile-main/index.html">
+          <img src="./images/work1.png" alt="work1_img" class="works">
+        </a> -->
+        <p id="work_text1"><a href="#">Social Links Form</a> <br>HTML/CSS
+        </p>
+      </div>
+      <div id="work2">
+        <p id="work_text2"><a href="#">Contact Form</a> <br>HTML/CSS</p>
+      </div>
+      <div id="work3">
+        <p id="work_text3"><a href="#">Coming Soon!!</a>HTML/CSS/JS</p>
+      </div>
+    </section>
+
+    <!-- Section3 contact form for convenience for employers -->
+    <section class="section3 contact">
+      <h2 class="aligh-center">Contact me</h2>
+      <!-- section3.1 contact-form for inputs -->
+      <section class="section3.1 contact-form">
+        <div class="download-resume"><i class="fa-solid fa-cloud-arrow-down"></i><a href="#">Download Resume</a></div>
+        <input type="text" class="contact-name" placeholder="Full Name" required>
+        <input type="text" class="contact-email" placeholder="Email Address" required>
+        <input type="text" class="contact-phone" placeholder="Phone Number">
+        <textarea name="message" id="message" placeholder="Message" required></textarea>
+        <button>Submit</button>
+      </section>
+      <!-- section3.2 contact-info for my mailing address, phone number and email address-->
+      <section class="section3.2 contact-info">
+        <div><i class="fa-solid fa-location-dot"></i>
+          <a href="#" class="contact-info-map">2100 Ave</a>
+        </div>
+        <div><a href="#" class="contact-info-phone"><i class="fa-solid fa-phone"></i>(000)-111-000</a></div>
+        <div><a href="#" class="contact-info-email"><i class="fa-solid fa-envelope"></i>suzuna.arakaki@gmail.com</a></div>
+      </section>
+    </section>
+  </body>
+</html>
