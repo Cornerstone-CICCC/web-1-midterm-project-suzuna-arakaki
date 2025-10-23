@@ -1,0 +1,268 @@
+/* style.scss file */
+
+// html, body, .containers
+* {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+}
+
+body {
+        font-family: "Trirong", serif;
+        background-color: rgb(202, 202, 202);
+}
+
+.containers {
+        display: grid;
+        text-align: center;
+        .section {
+                margin-top: 200px;
+                min-height: 600px;
+        }
+}
+
+h2 {
+        font-family: "Sofia", sans-serif;
+        font-size: 2rem;
+        margin-bottom: 100px;
+}
+
+// menu-container / nav
+.menu-container {
+                // the nav bar will be sticked at the top
+                position: sticky;
+                top: 0;
+                left: 0;
+                background-color: rgb(202, 202, 202, 0.9);
+                padding: 10px 20px;
+                z-index: 100;
+        .nav-menu {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                font-family: "Sofia", sans-serif;
+                
+                
+                .logo {
+                        color: black;
+                        text-decoration: none;
+                        font-size: 1.2rem;
+                }
+                .logo:hover {
+                        color: yellow;
+                }
+                ul {
+                        display: flex;
+                        align-items: center;
+                        gap: 2rem;
+                        li {
+                                list-style: none;
+                                a {
+                                        text-decoration: none;
+                                        color: black;
+                                }
+                                a:hover {
+                                        color: yellow;
+                                }
+                        }
+                }
+        }
+}
+
+// containers area -->>
+// header
+header {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: whitesmoke;
+        border-radius: 3px;
+        // background-color: rgb(202, 202, 202);
+        padding: 0 15px;
+        margin: 15px 0;
+        height: 500px;
+        h1 {
+                // font-family: "Sofia", sans-serif;
+                font-size: 2.25rem;
+                // text-align: left;
+        }
+        img {
+                // width: 150px;
+                // height: 150px;
+                // border-radius: 50%;
+                // This is for kasekake img!!! -->>
+                max-width: 500px;
+                height: 100%;
+                color: rgb(202, 202, 202);
+                filter: grayscale(100%);
+                // transition: filter grayscale(0%) 1.5s ease-in;
+        }
+        img:hover {
+                filter: grayscale(0%);
+                transition: filter 1.5s;
+        }
+        @media screen and (max-width: 500px) {
+                img {
+                        display: none;
+                }
+        }
+}
+
+// section area -->>
+// section1 about
+.about {
+     .about-icons {
+        ul {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                justify-content: center;
+                padding-inline-start: 0px;
+
+                gap: 2rem;
+                font-size: 80px;
+                @media screen and (min-width: 768px) {
+                        grid-template-columns: repeat(4, 1fr);
+                }
+        }
+        li {
+                list-style: none;
+                p {
+                        font-size: 15px;
+                        display: none;
+                }
+        }
+        li:hover {
+                background-color: rgb(245, 245, 245, 0.5);
+                border-radius: 3px;
+                p {
+                        display: block;
+                } 
+        }
+     }  
+}
+
+// section2 works
+.works {
+        .work-box {
+                display: flex;
+                flex-direction: column;
+                @media screen and (min-width: 768px) {
+                        flex-direction: row;
+                        gap: 3rem;
+                        justify-content: space-around;
+                }
+                .work {
+                        img {
+                                width: 200px;
+                                height: auto;
+                        }
+                }
+        }
+}
+
+// section3 contact
+.contact {
+        .section-contact-1 {
+                display: grid;
+                gap: 2rem;
+                margin: 20px;
+                @media screen and (min-width: 768px) {
+                        grid-template-columns: repeat(2, 1fr);
+                }
+                
+                .input-area {
+                        display: grid;
+                        grid-template-columns: repeat(1, 1fr);
+                        gap: 2rem;
+                        margin: auto;
+                        width: 100%;
+                        max-width: 400px;
+                        .download-resume {
+                                display: flex;
+                                font-size: 0.7rem;
+                        }
+                        .download-resume:hover {
+                                background-color: rgb(245, 245, 245, 0.5);
+                                border-radius: 3px;
+                                width: fit-content;
+                        }
+                        
+                        .input {
+                                border-radius: 3px;
+                                border: none;
+                                padding: 10px;
+                        }
+                        .input:hover {
+                                box-shadow: 1px 1px 5px rgb(0, 0, 0, 0.3);
+                        }
+                        @media screen and (min-width: 768px) {
+                                .input {
+                                        font-size: 1.1rem;
+                                }
+                        }
+                }
+                .text-and-submit-area {
+                        display: grid;
+                        align-items: baseline;
+                        grid-template-columns: repeat(1, 1fr);
+                        gap: 2rem;
+                        height: auto;
+                        margin: auto;
+                        width: 100%;
+                        max-width: 400px;
+                        textarea {
+                                border: none;
+                                border-radius: 3px;
+                                padding: 10px;
+                                height: 150px;
+                        }
+                        textarea:hover {
+                                box-shadow: 1px 1px 5px rgb(0, 0, 0, 0.3);
+                        }
+                        button {
+                                border: 1px solid rgb(160, 160, 160);
+                                border-radius: 3px;
+                                padding: 10px;
+                                background-color: white;
+                        }
+                        button:hover {
+                                background-color: rgb(70, 70, 70);
+                                color: whitesmoke;
+                                
+                        }
+                        @media screen and (min-width: 768px) {
+                                textarea {
+                                        margin-top: 75px;
+                                        font-size: 1.1rem;
+                                }
+                        }
+                }  
+        }
+        .section-contact-2 {
+                margin-top: 50px;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 15px;
+                background-color: rgb(0, 0, 0, 0.6);
+                font-size: 0.7rem;
+                @media screen and (min-width: 768px) {
+                        margin-top: 100px;
+                }
+                div {
+                        .fa-solid {
+                                color: whitesmoke;
+                        }
+                        a {
+                                text-decoration: none;
+                                color: whitesmoke;
+                        }
+                        .contact-info:hover {
+                                color: yellow;
+                                // background-color: rgb(245, 245, 245, 0.5);
+                                border-radius: 3px;
+                                width: fit-content;
+                        }
+                } 
+        }
+}
