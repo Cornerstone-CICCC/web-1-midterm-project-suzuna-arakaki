@@ -97,7 +97,7 @@ header img:hover {
   grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
   font-size: 80px;
-  margin-top: 100px;
+  margin-top: 20px;
 }
 @media screen and (min-width: 768px) {
   .about .about-icons ul {
@@ -120,46 +120,35 @@ header img:hover {
 }
 
 .works .work-box {
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  gap: 3rem;
-  justify-content: space-around;
+  display: flex;
+  flex-direction: column;
 }
 @media screen and (min-width: 768px) {
   .works .work-box {
-    grid-template-columns: repeat(3, 1fr);
+    flex-direction: row;
+    gap: 3rem;
+    justify-content: space-around;
   }
 }
-.works .work-box .work a img {
+.works .work-box .work img {
   width: 200px;
   height: auto;
-  color: rgb(202, 202, 202);
-  filter: grayscale(100%);
-}
-.works .work-box .work a img:hover {
-  filter: grayscale(0%);
-  transition: filter 0.2s;
-  transform: scale(150%);
-}
-.works .work-box .work p {
-  margin: 60px 0;
 }
 
 .contact .section-contact-1 {
   display: grid;
-  gap: 3rem;
+  gap: 2rem;
   margin: 20px;
 }
 @media screen and (min-width: 768px) {
   .contact .section-contact-1 {
     grid-template-columns: repeat(2, 1fr);
-    gap: 0rem;
   }
 }
 .contact .section-contact-1 .input-area {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
-  gap: 3rem;
+  gap: 2rem;
   margin: auto;
   width: 100%;
   max-width: 400px;
@@ -171,6 +160,7 @@ header img:hover {
 .contact .section-contact-1 .input-area .download-resume:hover {
   background-color: rgba(245, 245, 245, 0.5);
   border-radius: 3px;
+  width: -moz-fit-content;
   width: fit-content;
 }
 .contact .section-contact-1 .input-area .input {
@@ -217,7 +207,7 @@ header img:hover {
 }
 @media screen and (min-width: 768px) {
   .contact .section-contact-1 .text-and-submit-area textarea {
-    margin-top: 70px;
+    margin-top: 75px;
     font-size: 1.1rem;
   }
 }
@@ -245,11 +235,6 @@ header img:hover {
 .contact .section-contact-2 div .contact-info:hover {
   color: yellow;
   border-radius: 3px;
+  width: -moz-fit-content;
   width: fit-content;
-}
-.contact .section-contact-2 div iframe {
-  max-width: 200px;
-  max-height: 200px;
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */

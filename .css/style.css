@@ -235,6 +235,9 @@ header img:hover {
     margin-top: 100px;
   }
 }
+.contact .section-contact-2 div {
+  filter: grayscale(100%);
+}
 .contact .section-contact-2 div .fa-solid {
   color: whitesmoke;
 }
@@ -246,10 +249,6 @@ header img:hover {
   color: yellow;
   border-radius: 3px;
   width: fit-content;
-}
-.contact .section-contact-2 div iframe {
-  max-width: 200px;
-  max-height: 200px;
 }
 
 /*# sourceMappingURL=style.css.map */

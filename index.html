@@ -3,86 +3,193 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>Suzuna's Works</title>
 
+    <!-- Link for style.css -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <!-- Script Link for icons -->
     <script
       src="https://kit.fontawesome.com/1cca408388.js"
       crossorigin="anonymous"
     ></script>
+    <!-- Link for body font -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Trirong"
+    />
+    <!-- Link for h1 font -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Sofia&effect=neon|outline|emboss|shadow-multiple"
+    />
   </head>
+
   <body>
     <!-- nav is at the top of this page -->
     <div class="menu-container">
-      <a href="#top">Suzu</a>
-      <i class="fa-solid fa-bars humberger"></i>
       <nav class="nav-menu">
+        <a href="#top" class="logo">Suzu</a>
         <ul class="nav-list">
-          <li class="nav-item">Home</li>
-          <li class="nav-item">About</li>
-          <li class="nav-item">Works</li>
-          <li class="nav-item">Contact</li>
+          <!-- <li class="nav-item"><i class="fa-solid fa-bars humberger"></i></li> -->
+          <li><a href="#top">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#works">Works</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
     </div>
 
+    <div class="containers">
+      <!-- header display my name and circled photo -->
+      <header id="top">
+        <h1 class="font-effect-outline">
+          Hello, I am<br />Suzuna<br />Full Stack Developer
+        </h1>
+        <img src="./images/kasekake.png" alt="kasekake_img" />
+        <!-- <img src="./images/kasekake-no-color.png" alt="kasekake_no_olor_img" /> -->
+        <!-- <img src="./images/robbin.png" alt="my_dog_img" /> -->
+      </header>
 
-    <!-- header display my name and circled photo -->
-    <header id="#top">
-      <h1><br>Hello, I am</br>Suzuna<br>Full Stack Developer</br></h1>
-      <img src="./images/robbin.png" alt="my_dog_img">
-    </header>
-
-    <!-- Section1 about for my skills -->
-    <section class="section1 about">
-      <h2 class="aligh-center">New Generation Web Developer</h2>
-      <div class="about-icons">
-        <ul>
-          <li><i class="fa-brands fa-html5"></i></li>
-          <li><i class="fa-brands fa-css3-alt"></i></li>
-          <li><i class="fa-brands fa-node-js"></i></li>
-          <li><i class="fa-brands fa-github"></i></li>
-        </ul>
-      </div>
-    </section>
-
-    <!-- Section2 works for desplaying my projects -->
-    <section class="section2 works">
-      <h2 class="aligh-center">Works</h2>
-      <div id="work1">
-        <!-- <a href="file:///Users/arakakisuzuna/Documents/frontend-mentor/1social-links-profile-main/index.html">
-          <img src="./images/work1.png" alt="work1_img" class="works">
-        </a> -->
-        <p id="work_text1"><a href="#">Social Links Form</a> <br>HTML/CSS
-        </p>
-      </div>
-      <div id="work2">
-        <p id="work_text2"><a href="#">Contact Form</a> <br>HTML/CSS</p>
-      </div>
-      <div id="work3">
-        <p id="work_text3"><a href="#">Coming Soon!!</a>HTML/CSS/JS</p>
-      </div>
-    </section>
-
-    <!-- Section3 contact form for convenience for employers -->
-    <section class="section3 contact">
-      <h2 class="aligh-center">Contact me</h2>
-      <!-- section3.1 contact-form for inputs -->
-      <section class="section3.1 contact-form">
-        <div class="download-resume"><i class="fa-solid fa-cloud-arrow-down"></i><a href="#">Download Resume</a></div>
-        <input type="text" class="contact-name" placeholder="Full Name" required>
-        <input type="text" class="contact-email" placeholder="Email Address" required>
-        <input type="text" class="contact-phone" placeholder="Phone Number">
-        <textarea name="message" id="message" placeholder="Message" required></textarea>
-        <button>Submit</button>
-      </section>
-      <!-- section3.2 contact-info for my mailing address, phone number and email address-->
-      <section class="section3.2 contact-info">
-        <div><i class="fa-solid fa-location-dot"></i>
-          <a href="#" class="contact-info-map">2100 Ave</a>
+      <!-- Section1 about for my skills -->
+      <section class="section about" id="about">
+        <h2 class="aligh-center">About</h2>
+        <div class="about-icons">
+          <p class="discription">
+            <span class="my-name" style="font-weight: bold">Suzuna Arakaki</span
+            ><br />
+            <!-- Biography -->
+            "Challenging myself to get a career change and work-life balance"
+            <br />
+            <!-- Here is describing about dance experiences-->
+            I'm originally from Okinawa Japan, and over 10 years of experienced
+            with Okinawan Tradisional Dance.
+            <br />
+            My passion for dance has taught me discipline, creativity, and the
+            importance of continuous learning.
+            <br />
+            <!-- Here is describing about my programming skills-->
+          </p>
+          <ul>
+            <li>
+              <i class="fa-brands fa-html5"></i>
+              <p>HTML</p>
+            </li>
+            <li>
+              <i class="fa-brands fa-css3-alt"></i>
+              <p>CSS</p>
+            </li>
+            <li>
+              <i class="fa-brands fa-node-js"></i>
+              <p>JS</p>
+            </li>
+            <li>
+              <i class="fa-brands fa-github"></i>
+              <p>GIT HUB</p>
+            </li>
+          </ul>
         </div>
-        <div><a href="#" class="contact-info-phone"><i class="fa-solid fa-phone"></i>(000)-111-000</a></div>
-        <div><a href="#" class="contact-info-email"><i class="fa-solid fa-envelope"></i>suzuna.arakaki@gmail.com</a></div>
       </section>
-    </section>
+
+      <!-- Section2 works for desplaying my projects -->
+      <section class="section works" id="works">
+        <h2 class="aligh-center">Works</h2>
+        <div class="work-box">
+          <div class="work work1">
+            <a
+              href="https://suzuna-arakaki.github.io/suzu-social-links/index.html"
+              target="_blank"
+              ><img src="./images/work1.png" alt="social-links-form-img"
+            /></a>
+            <p class="work-text1">Social Links Form <br />HTML/CSS</p>
+          </div>
+          <div class="work work2">
+            <a href="" target="_blank"
+              ><img src="./images/work1.png" alt="social-links-form-img"
+            /></a>
+            <p class="work-text1">Contact Form <br />HTML/CSS</p>
+          </div>
+          <div class="work work3">
+            <a href="" target="_blank"
+              ><img src="./images/work1.png" alt="social-links-form-img"
+            /></a>
+            <p class="work-text1">Coming Soon!! <br />HTML/CSS/JS</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section3 contact form for convenience for employers -->
+      <section class="section contact" id="contact">
+        <h2 class="aligh-center">Contact me</h2>
+        <!-- section3.1 contact-form for inputs -->
+        <div class="section-contact-1 contact-form">
+          <div class="input-area">
+            <!-- input-area will work on the tablet and desktop screen size -->
+            <div class="download-resume">
+              <i class="fa-solid fa-cloud-arrow-down"></i
+              ><a href="./images/Resume_Suzuna.pdf" target="_blank"
+                >Download Resume</a
+              >
+            </div>
+            <input
+              type="text"
+              class="input input-name"
+              placeholder="Full Name"
+              required
+            />
+            <input
+              type="text"
+              class="input input-email"
+              placeholder="Email Address"
+              required
+            />
+            <input
+              type="text"
+              class="input input-phone"
+              placeholder="Phone Number (option)"
+            />
+          </div>
+          <div class="text-and-submit-area">
+            <!-- text-and-submit-area will work on the tablet and desktop screen size -->
+            <textarea
+              name="message"
+              id="message"
+              placeholder="Message"
+              required
+            ></textarea>
+            <button>Submit</button>
+          </div>
+        </div>
+        <!-- section3.2 contact-info for my mailing address, phone number and email address-->
+        <div class="section-contact-2 contact-info">
+          <div>
+            <i class="fa-solid fa-location-dot"></i>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2602.542055093599!2d-123.11574782347218!3d49.285074071393204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x548671665ca05e5b%3A0xa6aa4200b98ef9f9!2sCornerstone%20Community%20College%20-%20Main%20campus!5e0!3m2!1sen!2sca!4v1761273430088!5m2!1sen!2sca"
+              width="200"
+              height="200"
+              style="border: 0; filter: grayscale(1)"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              >Cornerstone International Comunity Collage of Canada</iframe
+            >
+            <!-- <a href="#" class="contact-info map"
+              >Cornerstone International Comunity Collage of Canada</a
+            > -->
+          </div>
+          <div>
+            <i class="fa-solid fa-phone"></i>
+            <a href="#" class="contact-info phone">(000)-111-000</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-envelope"></i>
+            <a href="mailto:suzuna.arakaki@gmail.com" class="contact-info email"
+              >suzuna.arakaki@gmail.com</a
+            >
+          </div>
+        </div>
+      </section>
+    </div>
   </body>
 </html>
