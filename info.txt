@@ -1,0 +1,6 @@
+text file!!!
+
+
+[URLs]
+suzu-social-links
+https://suzuna-arakaki.github.io/suzu-social-links/index.html

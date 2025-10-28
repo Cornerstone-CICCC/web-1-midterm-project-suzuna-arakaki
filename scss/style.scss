@@ -41,8 +41,6 @@ h2 {
                 align-items: center;
                 justify-content: space-between;
                 font-family: "Sofia", sans-serif;
-                
-                
                 .logo {
                         color: black;
                         text-decoration: none;
@@ -77,25 +75,23 @@ header {
         justify-content: center;
         background-color: whitesmoke;
         border-radius: 3px;
-        // background-color: rgb(202, 202, 202);
         padding: 0 15px;
         margin: 15px 0;
         height: 500px;
         h1 {
-                // font-family: "Sofia", sans-serif;
                 font-size: 2.25rem;
-                // text-align: left;
         }
         img {
+                // This is for my dog img -->>
                 // width: 150px;
                 // height: 150px;
                 // border-radius: 50%;
+
                 // This is for kasekake img!!! -->>
                 max-width: 500px;
                 height: 100%;
                 color: rgb(202, 202, 202);
                 filter: grayscale(100%);
-                // transition: filter grayscale(0%) 1.5s ease-in;
         }
         img:hover {
                 filter: grayscale(0%);
@@ -115,11 +111,9 @@ header {
         ul {
                 display: grid;
                 grid-template-columns: repeat(2, 1fr);
-                justify-content: center;
-                padding-inline-start: 0px;
-
                 gap: 2rem;
                 font-size: 80px;
+                margin-top: 100px;
                 @media screen and (min-width: 768px) {
                         grid-template-columns: repeat(4, 1fr);
                 }
@@ -144,18 +138,31 @@ header {
 // section2 works
 .works {
         .work-box {
-                display: flex;
-                flex-direction: column;
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+                gap: 3rem;
+                justify-content: space-around;
                 @media screen and (min-width: 768px) {
-                        flex-direction: row;
-                        gap: 3rem;
-                        justify-content: space-around;
+                        grid-template-columns: repeat(3, 1fr);
                 }
                 .work {
-                        img {
-                                width: 200px;
-                                height: auto;
+                        a {
+                                img {
+                                        width: 200px;
+                                        height: auto;
+                                        color: rgb(202, 202, 202);
+                                        filter: grayscale(100%);
+                                }
+                                img:hover {
+                                        filter: grayscale(0%);
+                                        transition: filter 0.2s;
+                                        transform: scale(150%);
+                                }
                         }
+                        p {
+                                margin: 60px 0;
+                        }
+                        
                 }
         }
 }
@@ -164,16 +171,17 @@ header {
 .contact {
         .section-contact-1 {
                 display: grid;
-                gap: 2rem;
+                gap: 3rem;
                 margin: 20px;
                 @media screen and (min-width: 768px) {
                         grid-template-columns: repeat(2, 1fr);
+                        gap: 0rem;
                 }
                 
                 .input-area {
                         display: grid;
                         grid-template-columns: repeat(1, 1fr);
-                        gap: 2rem;
+                        gap: 3rem;
                         margin: auto;
                         width: 100%;
                         max-width: 400px;
@@ -232,7 +240,7 @@ header {
                         }
                         @media screen and (min-width: 768px) {
                                 textarea {
-                                        margin-top: 75px;
+                                        margin-top: 70px;
                                         font-size: 1.1rem;
                                 }
                         }
@@ -242,6 +250,7 @@ header {
                 margin-top: 50px;
                 display: flex;
                 flex-direction: column;
+                // align-items: center;
                 align-items: flex-start;
                 padding: 15px;
                 background-color: rgb(0, 0, 0, 0.6);
@@ -250,6 +259,7 @@ header {
                         margin-top: 100px;
                 }
                 div {
+                        filter: grayscale(100%);
                         .fa-solid {
                                 color: whitesmoke;
                         }
@@ -259,7 +269,6 @@ header {
                         }
                         .contact-info:hover {
                                 color: yellow;
-                                // background-color: rgb(245, 245, 245, 0.5);
                                 border-radius: 3px;
                                 width: fit-content;
                         }

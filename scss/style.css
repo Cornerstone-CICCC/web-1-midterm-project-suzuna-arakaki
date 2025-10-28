@@ -95,10 +95,9 @@ header img:hover {
 .about .about-icons ul {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  justify-content: center;
-  padding-inline-start: 0px;
   gap: 2rem;
   font-size: 80px;
+  margin-top: 20px;
 }
 @media screen and (min-width: 768px) {
   .about .about-icons ul {
