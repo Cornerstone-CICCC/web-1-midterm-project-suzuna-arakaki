@@ -72,6 +72,7 @@ header {
   padding: 0 15px;
   margin: 15px 0;
   height: 500px;
+  scroll-margin-top: 60px;
 }
 header h1 {
   font-size: 2.25rem;
@@ -92,6 +93,11 @@ header img:hover {
   }
 }
 
+.about {
+  scroll-margin-top: 60px;
+  max-width: 1920px;
+  margin: auto;
+}
 .about .about-icons ul {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -119,6 +125,9 @@ header img:hover {
   display: block;
 }
 
+.works {
+  scroll-margin-top: 60px;
+}
 .works .work-box {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
@@ -128,6 +137,8 @@ header img:hover {
 @media screen and (min-width: 768px) {
   .works .work-box {
     grid-template-columns: repeat(3, 1fr);
+    max-width: 1920px;
+    margin: auto;
   }
 }
 .works .work-box .work a img {
@@ -145,6 +156,9 @@ header img:hover {
   margin: 60px 0;
 }
 
+.contact {
+  scroll-margin-top: 60px;
+}
 .contact .section-contact-1 {
   display: grid;
   gap: 3rem;
@@ -235,6 +249,9 @@ header img:hover {
     margin-top: 100px;
   }
 }
+.contact .section-contact-2 div {
+  filter: grayscale(100%);
+}
 .contact .section-contact-2 div .fa-solid {
   color: whitesmoke;
 }
@@ -246,10 +263,6 @@ header img:hover {
   color: yellow;
   border-radius: 3px;
   width: fit-content;
-}
-.contact .section-contact-2 div iframe {
-  max-width: 200px;
-  max-height: 200px;
 }
 
 /*# sourceMappingURL=style.css.map */

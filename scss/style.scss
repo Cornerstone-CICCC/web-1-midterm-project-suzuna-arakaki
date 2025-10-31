@@ -78,6 +78,7 @@ header {
         padding: 0 15px;
         margin: 15px 0;
         height: 500px;
+        scroll-margin-top: 60px;
         h1 {
                 font-size: 2.25rem;
         }
@@ -107,6 +108,9 @@ header {
 // section area -->>
 // section1 about
 .about {
+        scroll-margin-top: 60px;
+        max-width: 1920px;
+        margin: auto;
      .about-icons {
         ul {
                 display: grid;
@@ -137,6 +141,7 @@ header {
 
 // section2 works
 .works {
+        scroll-margin-top: 60px;
         .work-box {
                 display: grid;
                 grid-template-columns: repeat(1, 1fr);
@@ -144,6 +149,8 @@ header {
                 justify-content: space-around;
                 @media screen and (min-width: 768px) {
                         grid-template-columns: repeat(3, 1fr);
+                        max-width: 1920px;
+                        margin: auto;
                 }
                 .work {
                         a {
@@ -169,6 +176,9 @@ header {
 
 // section3 contact
 .contact {
+        scroll-margin-top: 60px;
+        // max-width: 1920px;
+        // margin: auto;
         .section-contact-1 {
                 display: grid;
                 gap: 3rem;
